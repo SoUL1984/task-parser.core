@@ -1,15 +1,15 @@
 ## Installation
 
 ```bash
+# install data base
+$ npm docker-compose up -d
+
 $ npm install
 ```
 
 ## Running the app
 
 ```bash
-# install data base
-$ npm docker-compose up -d
-
 # development
 $ npm run start
 

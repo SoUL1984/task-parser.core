@@ -16,13 +16,13 @@ export class ProductService {
 
     async getAllProduct() {
         return await this.productRepository.findAll({
-            attributes: ['id', 'sellerId', 'title', 'price'],
+            attributes: ['sellerId', 'title', 'price'],
         });
     }
 
     async getAllPoductBySellerID(sellerId: number) {
         return await this.productRepository.findAll({
-            attributes: ['id', 'sellerId', 'title', 'price'],
+            attributes: ['sellerId', 'title', 'price'],
             where: { sellerId: sellerId },
         });
     }

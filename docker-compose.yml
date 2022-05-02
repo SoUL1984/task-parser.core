@@ -1,0 +1,20 @@
+version: '3.0'
+
+services:
+  parsertaskdb_postgres:
+    image: postgres:12
+    container_name: parsertaskdb_postgres
+    env_file:
+      - .env
+    environment:
+      PG_DATA: /var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: always 
+
+volumes:
+  pgdata:
+
+

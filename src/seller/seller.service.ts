@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-import { Sequelize } from 'sequelize-typescript';
 import { Product } from 'src/product/product.model';
 import { CreateSellerDto } from './dto/create-seller.dto';
 import { Seller } from './seller.model';
